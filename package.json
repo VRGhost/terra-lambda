@@ -1,5 +1,5 @@
 {
-  "name": "_tmp",
+  "name": "terra-lambda-aws-cdk",
   "version": "0.1.0",
   "bin": {
     "terra-lambda": "bin/terra-lambda.js"
@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "@aws-cdk/cdk": "^0.24.1",
+    "@types/git-branch": "^2.0.1",
+    "git-branch": "^2.0.1",
     "source-map-support": "^0.5.9"
   }
 }
