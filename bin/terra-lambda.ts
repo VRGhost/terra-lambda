@@ -4,5 +4,5 @@ import cdk = require('@aws-cdk/cdk');
 import { TmpStack } from '../lib/_tmp-stack';
 
 const app = new cdk.App();
-new TmpStack(app, 'TmpStack');
+new TmpStack(app, 'TerraLambdaStack');
 app.run();
