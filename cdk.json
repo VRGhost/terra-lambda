@@ -1,3 +1,6 @@
 {
-  "app": "node bin/terra-lambda.js"
+  "app": "node bin/terra-lambda.js",
+  "context": {
+    "IS_TERRA_LAMBDA_CDK_DEPLOY": true
+  }
 }

@@ -329,3 +329,4 @@ bin/terra-lambda.d.ts
 bin/terra-lambda.js
 lib/*.js
 lib/*.d.ts
+tmp/*
