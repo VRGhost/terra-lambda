@@ -94,7 +94,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -330,3 +329,4 @@ bin/terra-lambda.js
 lib/*.js
 lib/*.d.ts
 tmp/*
+/cdk.out/
