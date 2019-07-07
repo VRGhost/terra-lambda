@@ -6,7 +6,8 @@ clean:
 	find "$(PROJECT_ROOT)" \
 		-not \( -path "$(PROJECT_ROOT)node_modules" -prune \) -a \
 		-not \( -path "$(PROJECT_ROOT).git" -prune \) \
-		-type f | xargs -I'XX' -- find XX \( -iname '*.d.ts' -o -iname '*.js' \) -delete
+		-type f | xargs -I'XX' -- find XX \( -iname '*.d.ts' -o -iname '*.js' \) \
+					-a -not -iname 'webpack.config.js' -delete
 
 build-cdk-js:
 	npm run build
@@ -22,7 +23,7 @@ render-templates: build-cdk-js
 
 
 build-static-html: output-fs
-	cp -rf "$(PROJECT_ROOT)ui/*.html" "$(PROJECT_ROOT)tmp/build/ui/"
+	cp -rf "$(PROJECT_ROOT)ui/"*.html "$(PROJECT_ROOT)tmp/build/ui/"
 
 build: build-cdk-js build-ui build-static-html
 

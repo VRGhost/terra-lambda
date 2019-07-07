@@ -330,3 +330,5 @@ lib/*.js
 lib/*.d.ts
 tmp/*
 /cdk.out/
+/ui/src/*.js
+/ui/src/*.d.ts
