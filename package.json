@@ -1,6 +1,7 @@
 {
   "name": "terra-lambda-aws-cdk",
   "version": "0.1.0",
+  "private": true,
   "bin": {
     "terra-lambda": "bin/terra-lambda.js"
   },
